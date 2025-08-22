@@ -24,7 +24,7 @@
 
     <!-- FUN FACTS -->
     <section class="fun-facts">
-      <h2>✨Fun Facts About Me✨</h2>
+      <h2 class="fun-facts-title">✨Fun Facts About Me✨ </h2>
       <div class="facts-grid">
         <div class="fact-card">
           <h4>🚀 AWS re/Start Student</h4>
@@ -75,6 +75,32 @@
 
     <div class="divider"></div>
 
+     <!-- CONTACT FORM SECTION - Added for user contact functionality -->
+        <section class="contact-form">
+            <h3>Get In Touch</h3>
+            <p>Have a question or want to connect? Send me a message!</p>
+            <!-- Form message container for success/error messages -->
+            <div id="form-message" class="form-message" style="display: none;"></div>
+            <form class="contact-form-container">
+                <!-- Contact form input fields -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <!-- Contact form submit button -->
+                <button type="submit" class="contact-submit-btn">Send Message</button>
+            </form>
+        </section>
+        <!-- END CONTACT FORM SECTION -->
+
     <!-- QUOTE OF THE DAY -->
     <section class="quote-box">
       <blockquote>
@@ -82,6 +108,8 @@
       </blockquote>
     </section>
   </main>
+
+
 
   <footer>
     <p>&copy; 2025 Marian Mariano. Built with ❤️ on AWS</p>
