@@ -1,4 +1,5 @@
 🚀 **What This Challenge Covers**
+
 This challenge walks through deploying a static website using GitHub and AWS Amplify:
 
 ✅ Created GitHub repository to host project files
