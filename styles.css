@@ -104,15 +104,17 @@ h3 {
 .divider {
   height: 2px;
   background: linear-gradient(to right, #ffeaa7, #a29bfe, #fab1a0);
-  margin: 35px 0;
+  margin: 100px 0;
   border-radius: 2px;
+  
 }
 
 /* Fun Facts Grid */
 .facts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  margin: 100px 0;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
 .fact-card {
@@ -133,8 +135,9 @@ h3 {
 .hobby-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
   justify-content: center;
+  margin: 100px 0;
 }
 
 .hobby-card {
@@ -157,6 +160,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 18px;
+  margin: 100px 0;
   justify-items: center;
   align-items: center;
 }
