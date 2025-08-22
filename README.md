@@ -9,3 +9,6 @@ This challenge walks through deploying a static website using GitHub and AWS Amp
 🔗 Deployed the website using AWS Amplify + GitHub integration
 
 🔄 Tested automatic deployment by making a code change and verifying the update
+
+
+**Here is the URL: **  https://main.d16wrqhqzo2q57.amplifyapp.com/
