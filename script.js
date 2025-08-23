@@ -23,22 +23,27 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         try {
-            const response = await fetch(LAMBDA_URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            });
+          const response = await fetch(LAMBDA_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
 
-            if (response.ok) {
-                showMessage('Message sent successfully! Thank you for reaching out.', 'success');
-                form.reset();
-            } else {
-                showMessage('Failed to send message. Please try again.', 'error');
-            }
+          console.log('Response status:', response.status);
+
+          if (response.ok) {
+            showMessage('Message sent successfully! Thank you for reaching out.', 'success');
+            form.reset();
+          } else {
+            const errorText = await response.text();
+            console.error('Error response:', errorText);
+            showMessage('Failed to send message. Please try again.', 'error');
+          }
         } catch (error) {
-            showMessage('Network error. Please check your connection and try again.', 'error');
+          console.error('Fetch error:', error);
+          showMessage('Network error. Please check your connection and try again.', 'error');
         }
 
         // Reset button
